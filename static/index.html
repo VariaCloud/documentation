@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Backend mit HTMX</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<div class="container mx-auto p-8">
+    <h1 class="text-3xl font-bold text-center mb-6">V Backend mit HTMX und Tailwind</h1>
+
+    <div id="content" class="text-center">
+        <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                hx-get="/api/message"
+                hx-target="#message"
+                hx-swap="innerHTML">
+            Nachricht abrufen
+        </button>
+
+        <div id="message" class="mt-4 text-xl text-gray-700"></div>
+    </div>
+</div>
+</body>
+</html>
