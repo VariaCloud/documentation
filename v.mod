@@ -1,5 +1,5 @@
 Module {
-	name: 'website'
+	name: 'documentation'
 	description: ''
 	version: '0.0.1'
 	license: 'MIT'
